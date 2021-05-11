@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Postmeridiem</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <!-- <meta property="og:image" content="img/dest/preview.jpg" /> -->
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/app.min.css" />
+</head>
+<style>
+</style>
+
+<body>
+    <section class="post-slider-section">
+        <div class="container-post-slider">
+            <h3 class="post-slider-title">Образы <br> наших невест</h3>
+            <div class="post-slider js--post-slider">
+                <div class="swiper-wrapper">
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-1.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-2.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-3.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-4.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-5.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-6.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-7.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-8.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-9.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-10.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-11.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-12.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-13.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-14.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-15.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-16.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-17.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-18.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-19.jpg" alt=""></div>
+                    <div class="post-slide swiper-slide"><img src="./images/dest/post_slide-20.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next swiper-button--post"></div>
+                <div class="swiper-button-prev swiper-button--post"></div>
+            </div>
+            <p class="post-slider-text">
+                И помните, что вы никому ничего не должны!
+                И даже следовать трендам, о которых мы рассказали выше. Любой тренд хорош только, если он отражает ваши
+                собственные вкусы и предпочтения. А если вы всегда мечтали о пышном платье, как у диснеевских принцесс —
+                просто сделайте это и не слушайте никого. Главное — оставаться верной себе, чувствовать себя комфортно и
+                быть счастливой. Это ваш день!
+            </p>
+        </div>
+    </section>
+    <script src="js/app.min.js"></script>
+    <script>
+        const swiper = new Swiper('.js--post-slider', {
+            slidesPerView: 1.6,
+            centeredSlides: true,
+            loop: true,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                992: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
